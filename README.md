@@ -1,4 +1,4 @@
-# Stylee McStyleface
+# Stylie McStyleface
 
 Tagged template strings for SASS. Uses `node-sass` so not useful for client-side code.
 
@@ -6,7 +6,7 @@ The intended use-case is for rendering static sites with JS and React, but keepi
 the styles in the same files as the code. I was previously using [free-style](https://github.com/blakeembrey/free-style) but struggled with its lexicographic approach to rule ordering (bad news for @media queries). It also fails silently way too often and has some bugginess around deeply-nested things. All this led me to a comparatively simple approach.
 
 ```js
-import style from 'stylee-mcstyleface';
+import style from 'stylie-mcstyleface';
 
 // include global rules
 style.rules `
