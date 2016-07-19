@@ -1,0 +1,5 @@
+.*
+!.gitignore
+!.babelrc
+!.eslintrc.json
+node_modules/

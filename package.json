@@ -1,0 +1,19 @@
+{
+  "name": "styley-mcstyleface",
+  "version": "1.0.0",
+  "main": "index.js",
+  "description": "Like free-style, but with tagged template strings and SASS",
+  "main": "index.js",
+  "scripts": {
+    "test": "babel-node test.es"
+  },
+  "author": "David Sheldrick",
+  "license": "MIT",
+  "dependencies": {
+    "node-sass": "^3.8.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.10.1",
+    "babel-preset-es2015": "^6.9.0"
+  }
+}
