@@ -1,4 +1,4 @@
-# Styley McStyleface
+# Stylee McStyleface
 
 Tagged template strings for SASS. Uses `node-sass` so not useful for client-side code.
 
