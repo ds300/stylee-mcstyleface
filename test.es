@@ -8,7 +8,7 @@ const className = style.register `
   }
 `;
 
-style.include `
+style.rules `
   body {
     background-color: cyan;
     display: flex;

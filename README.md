@@ -11,7 +11,7 @@ has led me to this comparatively simple approach.
 import style from 'styley-mcstyleface';
 
 // include global rules
-style.include `
+style.rules `
   body {
     font-size: 12pt;
   }

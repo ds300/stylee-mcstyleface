@@ -57,7 +57,7 @@ Style.prototype.register = function (strings) {
  *
  * @return void
  */
-Style.prototype.include = function (strings) {
+Style.prototype.rules = function (strings) {
   var scss = interpolateTaggedTemplateStrings(strings, arguments);
 
   var renderResult = sass.renderSync({data: scss});
