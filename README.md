@@ -8,7 +8,7 @@ frustrations with it's approach to rule ordering and bugginess around deeply-nes
 has led me to this comparatively simple approach.
 
 ```js
-import style from 'styley-mcstyleface';
+import style from 'stylee-mcstyleface';
 
 // include global rules
 style.rules `
