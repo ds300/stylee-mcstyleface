@@ -2,7 +2,7 @@
 
 var sass = require('node-sass');
 
-export function stringHash (str) {
+function stringHash (str) {
   let value = 5381;
   let i = str.length;
 
