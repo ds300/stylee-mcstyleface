@@ -3,14 +3,14 @@
 var sass = require('node-sass');
 
 function stringHash (str) {
-  let value = 5381;
-  let i = str.length;
+  var value = 5381;
+  var i = str.length;
 
   while (i) {
     value = (value * 33) ^ str.charCodeAt(--i);
   }
 
-  return (value >>> 0).toString(36);
+  return "mc" + (value >>> 0).toString(26);
 }
 
 function interpolateTaggedTemplateStrings (strings, args) {
