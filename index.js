@@ -67,7 +67,7 @@ Style.prototype.rules = function (strings) {
 /**
  * returns the CSS compiled so far
  */
-Style.prototype.getCSS = function () {
+Style.prototype.getCSS = Style.prototype.getStyles = function () {
   return this.css;
 };
 
