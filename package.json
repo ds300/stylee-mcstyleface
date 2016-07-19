@@ -1,5 +1,5 @@
 {
-  "name": "styley-mcstyleface",
+  "name": "stylee-mcstyleface",
   "version": "1.0.0",
   "main": "index.js",
   "description": "Like free-style, but with tagged template strings and SASS",
