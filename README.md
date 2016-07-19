@@ -29,7 +29,7 @@ const className = style.register `
   }
 `;
 
-className // => '1igb8ty'
+className // => 'mc1igb8ty'
 
 // and use them in JSX or wherever
 const elem = <div className={className}>some content</div>;
