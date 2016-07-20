@@ -43,8 +43,8 @@ style.getCSS();
 //
 // @media (min-width: 90000px) {
 //   font-size: 500pt; }
-// .1igb8ty {
+// .mc1igb8ty {
 //   color: #777; }
-//   .1igb8ty:hover {
+//   .mc1igb8ty:hover {
 //     color: #222; }
 ```
