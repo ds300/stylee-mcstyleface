@@ -1,8 +1,9 @@
 "use strict";
 
-const isNode = typeof module !== 'undefined' && module.exports;
+const isNode = typeof module !== 'undefined' && module.exports && typeof window === 'undefined';
 
-var sass = isNode ? require('node-sass') : null;
+// need to fool browserify
+var sass = isNode ? module['req' + 'uire']('node-sass') : null;
 
 function stringHash (str) {
   var value = 5381;
