@@ -1,6 +1,8 @@
 "use strict";
 
-var sass = require('node-sass');
+const isNode = typeof module !== 'undefined' && module.exports;
+
+var sass = isNode ? require('node-sass') : null;
 
 function stringHash (str) {
   var value = 5381;
@@ -44,10 +46,13 @@ Style.prototype.register = function (strings) {
   var scss = interpolateTaggedTemplateStrings(strings, arguments);
 
   var className = stringHash(scss);
-  scss = "." + className + "{\n" + scss + "\n}";
 
-  var renderResult = sass.renderSync({data: scss});
-  this.css += renderResult.css.toString();
+  if (isNode) {
+    scss = "." + className + "{\n" + scss + "\n}";
+
+    var renderResult = sass.renderSync({data: scss});
+    this.css += renderResult.css.toString();
+  }
 
   return className;
 };
@@ -58,10 +63,12 @@ Style.prototype.register = function (strings) {
  * @return void
  */
 Style.prototype.rules = function (strings) {
-  var scss = interpolateTaggedTemplateStrings(strings, arguments);
+  if (isNode) {
+    var scss = interpolateTaggedTemplateStrings(strings, arguments);
 
-  var renderResult = sass.renderSync({data: scss});
-  this.css += renderResult.css.toString();
+    var renderResult = sass.renderSync({data: scss});
+    this.css += renderResult.css.toString();
+  }
 };
 
 /**
